@@ -165,11 +165,11 @@ instance CoArbitrary BL.ByteString where
 
 -- Text
 instance Arbitrary TS.Text where
-    arbitrary = TS.pack <$> arbitrary
+    arbitrary = TS.pack . (filter (/= '\NUL')) <$> arbitrary
     shrink xs = TS.pack <$> shrink (TS.unpack xs)
 
 instance Arbitrary TL.Text where
-    arbitrary = TL.pack <$> arbitrary
+    arbitrary = TL.pack . (filter (/= '\NUL')) <$> arbitrary
     shrink xs = TL.pack <$> shrink (TL.unpack xs)
 
 instance CoArbitrary TS.Text where
