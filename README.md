@@ -1,6 +1,13 @@
 # NOTICE
 
-This repository exists only to solve https://github.com/phadej/qc-instances/issues/9
+This repository exists only to solve https://github.com/phadej/qc-instances/issues/9 If you are facing the same issue, please add the following to the `packages` section in your `stack.yaml` file. Please note, this will give you a patched version of **v0.3.12 of the quickcheck-instances package**
+
+```
+packages:
+- location:
+    git: git@github.com:vacationlabs/qc-instances.git
+    commit: 29fa5cfd58371dcb3e6a5e672c755180fec95af6
+```
 
 # quickcheck-instances [![Build Status](https://travis-ci.org/aslatter/qc-instances.svg?branch=master)](https://travis-ci.org/aslatter/qc-instances)
 
