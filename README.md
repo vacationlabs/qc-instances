@@ -1,3 +1,7 @@
+# NOTICE
+
+This repository exists only to solve https://github.com/phadej/qc-instances/issues/9
+
 # quickcheck-instances [![Build Status](https://travis-ci.org/aslatter/qc-instances.svg?branch=master)](https://travis-ci.org/aslatter/qc-instances)
 
 This package provides instances for the classes in the QuickCheck Haskell library.
